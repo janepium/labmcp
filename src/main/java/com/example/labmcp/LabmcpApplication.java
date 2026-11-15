@@ -1,6 +1,6 @@
 package com.example.labmcp;
 
-import com.example.labmcp.service.TareaToolsService;
+import com.example.labmcp.service.SupermercadoToolsService;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +16,7 @@ public class LabmcpApplication {
 
 
 	@Bean
-	public ToolCallbackProvider tareaTools(TareaToolsService tools){
+	public ToolCallbackProvider supermercadoTools(SupermercadoToolsService tools){
 		return MethodToolCallbackProvider.builder()
 				.toolObjects(tools)
 				.build();
